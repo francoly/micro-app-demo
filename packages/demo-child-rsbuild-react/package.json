@@ -1,5 +1,5 @@
 {
-  "name": "vite-demo",
+  "name": "vite-demo-1",
   "version": "0.0.0",
   "scripts": {
     "dev": "rsbuild dev",
@@ -7,20 +7,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@micro-zoe/micro-app": "1.0.0-rc.6",
-    "@types/systemjs": "^6.1.1",
+    "@micro-web/sub": "^0.2.3",
     "history": "^5.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-router-dom": "^6.2.1",
-    "systemjs": "^6.11.0"
+    "react-router-dom": "^6.2.1"
   },
   "devDependencies": {
+    "@micro-web/vite-plugin": "^0.3.0",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
     "less": "^4.1.2",
+    "vite": "^2.7.2",
     "@rsbuild/core": "^0.6.14",
     "@rsbuild/plugin-react": "^0.6.14"
+    
+    
   }
 }

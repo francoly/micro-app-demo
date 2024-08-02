@@ -8,5 +8,5 @@ export default defineConfig({
   server: {
     port: 3004,
   },
-  plugins: [vue(), microWebPlugin()],
+  plugins: [vue(), microWebPlugin({ styleAppendTo: 'document.head' })],
 });

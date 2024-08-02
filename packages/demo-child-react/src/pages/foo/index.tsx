@@ -5,7 +5,7 @@ export default function Foo() {
   return (
     <>
       <img className={styles.img} alt="" src={logo} />
-      <div className={styles.foo}>当前位置：子应用子路由</div>
+      <div className={styles.foo}>2222</div>
     </>
   );
 }

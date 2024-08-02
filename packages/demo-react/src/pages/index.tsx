@@ -1,6 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-import { MicroApp } from '@micro-web/app';
-import { history } from '../common/history';
 import { Example } from './example';
 
 export default function Pages() {
@@ -10,27 +8,20 @@ export default function Pages() {
       <Route
         path="/react/*"
         element={
-          <MicroApp
-            key="react"
-            className="micro-app"
-            entry="//localhost:3002/react/src/main.tsx"
-            // entry="//localhost:5000/react/main.js"
-            fallback="加载中"
-            history={history}
-          />
+          <micro-app iframe name='my-app' url='http://localhost:3002/react/'></micro-app>
         }
       />
       <Route
         path="/vue/*"
         element={
-          <MicroApp
-            key="vue"
-            className="micro-app"
-            entry="//localhost:3004/vue/src/main.tsx"
-            // entry="//localhost:5000/vue/main.js"
-            fallback="加载中"
-            history={history}
-          />
+          <micro-app iframe name='my-app' url='http://localhost:3004/vue/'></micro-app>
+
+        }
+      />
+      <Route
+        path="/rsbuild-react/*"
+        element={
+          <micro-app  name='my-app' url='http://localhost:3003/rsbuild-react/'></micro-app>
         }
       />
     </Routes>

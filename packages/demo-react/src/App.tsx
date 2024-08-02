@@ -4,9 +4,10 @@ import {
 } from 'react-router-dom';
 import Pages from './pages';
 import { history } from './common/history';
+import microApp from '@micro-zoe/micro-app'
 import logo from './logo.svg';
 import styles from './App.module.less';
-
+microApp.start()
 function App() {
   return (
     <HistoryRouter history={history}>
@@ -19,11 +20,12 @@ function App() {
 
           <div className={styles.appLink}>
             <Link to="/">首页</Link>
-            <Link to="/react">React 子应用</Link>
-            <Link to="/vue">Vue 子应用</Link>
+            <Link to="/react">vite React 子应用</Link>
+            <Link to="/rsbuild-react">Rsbuild React 子应用</Link>
+            <Link to="/vue">Vite Vue 子应用</Link>
           </div>
         </header>
-
+       
         <div className={styles.appContent}>
           <Pages />
         </div>
